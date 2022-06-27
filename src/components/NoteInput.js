@@ -6,9 +6,12 @@ const NoteInput = ({ onFormSubmit }) => {
 
   const handleChange = (event) => {
     let { name, value, maxLength } = event.target
-    const charLength = maxLength - value.length
     setNote((prevState) => ({ ...prevState, [name]: value }))
-    setMaxCharacters(Number(charLength))
+
+    if (name === 'title') {
+      const charLength = maxLength - value.length
+      setMaxCharacters(Number(charLength))
+    }
   }
 
   const handleSubmit = (event) => {
