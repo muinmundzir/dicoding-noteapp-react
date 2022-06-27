@@ -12,3 +12,7 @@ In the project directory, you can:
 ### `4. Delete notes`
 ### `5. Filter search notes`
 
+## Demo
+
+https://m3-note.netlify.app/
+
